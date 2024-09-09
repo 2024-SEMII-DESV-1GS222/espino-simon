@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio#3</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // Problema 1
+    function esPalindromoDobleBase(t) {
+        function esPalindromo(cadena) {
+            return cadena === cadena.split('').reverse().join('');
+        }
+        let decimalCadena = t.toString();
+        let binarioCadena = t.toString(2);
+
+        return esPalindromo(decimalCadena) && esPalindromo(binarioCadena);
+    }
+
+    // Problema 2
+    function contarCaracteres(t) {
+        let conteo = {};
+
+        for (let i = 0; i < t.length; i++) {
+            let char = t[i];
+            if (conteo[char]) {
+                conteo[char]++;
+
+            } else {
+                conteo[char] = 1;
+            }
+        }
+
+        return conteo;
+    }
+
+    // Problema 3
+    function esBisiesto(a) {
+        return (a % 4 === 0 && a % 100 !== 0) || (a % 400 === 0);
+    }
+
+    // Problema 4
+    function sumarPrimosDebajo(n) {
+        let suma = 0;
+
+        function esPrimo(num) {
+            if (num < 2) return false;
+            for (let i = 2; i <= Math.sqrt(num); i++) {
+                if (num % i === 0) return false;
+            }
+            return true;
+        }
+
+        for (let i = 1; i <= n; i++) {
+            if (esPrimo(i)) {
+                suma += i;
+            }
+        }
+
+        return suma;
+    }
+</script>
+
+</html>
