@@ -57,3 +57,8 @@ button:hover {
 .main-lectura {
     width: 100%;
 }
+
+.main-grafica {
+    width: 100%;
+    display: flex;
+}
