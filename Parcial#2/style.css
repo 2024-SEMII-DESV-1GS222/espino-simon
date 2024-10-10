@@ -1,0 +1,49 @@
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #d2dae2;
+}
+
+.btn-container {
+    height: 120px;
+}
+
+button {
+    width: 100px;
+    border: solid black 2px;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #0be881;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+button:nth-child(2) {
+    background-color: #ffdd59;
+}
+
+button:nth-child(3) {
+    background-color: #ff3f34;
+}
+
+.main-container {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.box {
+    width: 120px;
+    height: 120px;
+    background-color: #1e272e;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 20px;
+}
