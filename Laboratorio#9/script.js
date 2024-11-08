@@ -20,11 +20,12 @@ const handlers = {
         // btnLimpiar.style.display = "inline";
         renderPokemon(htmlElements.result, pokemon);
         htmlElements.btnLimpiar.style.visibility = "visible";
+        htmlElements.result.style.visibility = "visible";
     },
-    
+
     clear: () => {
-        htmlElements.result.innerHTML = ''; 
-        htmlElements.btnLimpiar.style.visibility = "hidden"; 
+        htmlElements.result.innerHTML = '';
+        htmlElements.btnLimpiar.style.visibility = "hidden";
     }
 }
 

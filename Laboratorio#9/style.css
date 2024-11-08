@@ -122,7 +122,7 @@ p {
     transform: scale(1.05);
 }
 
-.btn-limpiar { 
+.btn-limpiar {
     visibility: hidden;
 }
 
@@ -170,4 +170,8 @@ h5 {
 
 .pokemon-card__content>div:first-child img:last-of-type {
     left: -10px;
+}
+
+.container-resultado {
+    visibility: hidden;
 }
