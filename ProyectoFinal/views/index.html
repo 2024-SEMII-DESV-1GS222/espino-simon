@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTicket</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300..900&display=swap" rel="stylesheet">
+    <script type="module" src="/scripts/app.js"></script>
+</head>
+
+<body>
+    <div class="main-container">
+        <nav class="navbar">
+            <div class="navdiv">
+                <div class="logo"><a href="index.html">MyTicket</a></div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ticket.html">MyTicket</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="play.html">RetroPlay</a></li>
+                    <button><a href="login.html">Login</a></button>
+                    <button class="switch">
+                        <input type="checkbox" id="toggle" />
+                        <label for="toggle" class="toggle-label">
+                            <span class="toggle-circle"></span>
+                        </label>
+                    </button>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="grid-container">
+            <a class="grid__ticket" href="ticket.html">
+                <h3>Generate MyTicket</h3>
+                <p>Discover which songs and artists defined your best moments and take home a stylish keepsake. Generate
+                    your personalized ticket here.</p>
+                <img src="https://i.pinimg.com/474x/27/b3/63/27b3630a3fafa382347ade5b0470de0c.jpg" alt="MyTicket">
+            </a>
+            <a class="grid__imgs" href="ticket.html">
+                <img class="top-imgs" src="https://media.gq.com/photos/5e59360d5d4ffa000871027a/1:1/w_3153,h_3153,c_limit/gq_travis_nike_022820.jpg">
+                <div>
+                    <p>Your</p>
+                    <p>Top</p>
+                    <p>Tracks</p>
+                </div>
+                <img class="top-imgs" src="https://media.gq.com/photos/5e59360d5d4ffa000871027a/1:1/w_3153,h_3153,c_limit/gq_travis_nike_022820.jpg">
+            </a>
+            <a class="grid__play" href="play.html">
+                <h3>Retro Play</h3>
+                <p>Listen your playlist in a retro way.</p>
+            </a>
+            <a class="grid__explore" href="explore.html">
+                <h3>Explore</h3>
+                <p>Search for your favorite artists, beloved songs, or explore entire albums. Find out how many
+                    listeners share your musical passion.</p>
+                <div class="grid__explore__form">
+                    <div>
+                        <input type="text" placeholder="Search...">
+                        <select name="search-by" id="search-by">
+                            <option value="song">Song</option>
+                            <option value="artist">Artist</option>
+                            <option value="album">Album</option>
+                        </select>
+                    </div>
+                    <button class="btn">Submit</button>
+                </div>
+            </a>
+        </main>
+    </div>
+</body>
+
+</html>
