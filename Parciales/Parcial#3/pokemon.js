@@ -27,6 +27,7 @@ const getEvolutions = async (name, dataPokemon) => {
 
 const renderPokemon = (template, pokemon) => {
     const { id, name, sprites, height, weight, abilities, evolutions } = pokemon;
+    console.log(abilities);
     const html = `
     <div class="pokemon-card">
         <div class="pokemon-card__header">
